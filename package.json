@@ -1,0 +1,19 @@
+{
+  "name": "base_node_material",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "nunjucks": "^2.4.2"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "base_node_material",
+  "description": "",
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.1",
+    "modernizr": "^3.3.1",
+    "jquery-ui": "^1.11.4",
+    "fullcalendar": "^2.6.1",
+    "summernote": "^0.8.1",
+    "chartist": "^0.9.7",
+    "bootstrap-wysihtml5": "bootstrap3-wysihtml5#*",
+    "jquery": "jQuery#1.10.2",
+    "perfect-scrollbar": "^0.6.11",
+    "iCheck": "^1.0.2",
+    "bootstrap-select": "^1.10.0",
+    "datatables": "DataTables#^1.10.11",
+    "fullscreen": "*",
+    "sparkline": "jquery.sparkline#^2.1.2",
+    "peity": "^3.2.0",
+    "ckeditor": "^4.5.8",
+    "google-code-prettify": "^1.0.4"
+  }
+}
