@@ -33,6 +33,7 @@
     "sparkline": "jquery.sparkline#^2.1.2",
     "peity": "^3.2.0",
     "ckeditor": "^4.5.8",
-    "google-code-prettify": "^1.0.4"
+    "google-code-prettify": "^1.0.4",
+    "simple-line-icons": "^2.2.4"
   }
 }

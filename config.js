@@ -14,7 +14,7 @@ config.dirServerModules = "./app/modules";
 config.dirServerViews = "./app/views";
 config.dirServerLayoutViews = config.dirServerViews+"/layouts";
 config.dirServerPagesViews = config.dirServerViews+"/pages";
-
+config.viewFileExtension = ".njk";
 config.isAjaxRequest = function(req, withJsonResponse){
     var answer = req.xhr;
     if(withJsonResponse){
