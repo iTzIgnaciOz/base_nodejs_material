@@ -27,7 +27,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.locals = global.config;
 app.set('view engine', 'nunjucks');
 app.set('views', config.dirServerViews);
-app.engine('.njk', consolidate.nunjucks);
+app.engine(config.viewFileExtension, consolidate.nunjucks);
 app.set('view cache', false);
 app.use('/', router_app);
 
