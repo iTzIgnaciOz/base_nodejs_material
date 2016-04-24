@@ -5,7 +5,8 @@ var config = {};
 
 config.environment = 'dev'; // dev, prod, test
 
-config.db = {url: "mongodb://localhost/test"}
+config.db = {url: "mongodb://192.168.10.10/base"}
+config.sessionSecret = 'NoMeJodasLaVida2016'
 
 config.dirServerServices = "./app/services";
 config.dirServerModels = "./app/models";

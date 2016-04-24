@@ -1,0 +1,30 @@
+{# Created by Arkan on 24/4/2016. #}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>{% block title %} Inicio {% endblock %} - Bemat Admin</title>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+
+    {# Bootstrap Core CSS #}
+    <link href="/public/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    {# Fontawesome CSS #}
+    {#<link href="/public/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">#}
+
+    {# Admin CSS#}
+    <link href="/public/theme/css/bemat-admin.min.css" rel="stylesheet" id="theme-switcher">
+
+    {% block stylesheets %}{% endblock %}
+</head>
+{% block body %}{% endblock %}
+</html>
+

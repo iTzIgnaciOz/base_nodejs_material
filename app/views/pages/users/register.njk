@@ -10,21 +10,26 @@
     <span>Create an account</span>
 {% endblock %}
 {% block content %}
-    <form class="form" role="form" action="#">
+    {% for i in messages %}
+        <div class="flash">
+            {{ messages[i] }}
+        </div>
+    {% endfor %}
+    <form class="form" role="form" method="post" action="/users/register">
         <div class="form-group floating-label">
-            <input type="text" class="form-control" id="regular2">
-            <label for="regular2">Username</label>
+            <input type="text" class="form-control" name="username" id="username">
+            <label for="username">Username</label>
         </div>
         <div class="form-group floating-label">
-            <input type="password" class="form-control" id="password">
+            <input type="password" class="form-control"  name="password" id="password">
             <label for="password">Password</label>
         </div>
         <div class="form-group floating-label">
-            <input type="password" class="form-control" id="password2">
+            <input type="password" class="form-control" name="password2" id="password2">
             <label for="password2">Repeat Password</label>
         </div>
         <div class="form-group floating-label">
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" name="email" id="email">
             <label for="email">E-mail address</label>
         </div>
         <div class="">
