@@ -11,7 +11,7 @@ config.dirServerServices = "./app/services";
 config.dirServerModels = "./app/models";
 config.dirServerModules = "./app/modules";
 
-config.dirServerViews = "./app/views";
+config.dirServerViews = "app/views";
 config.dirServerLayoutViews = config.dirServerViews+"/layouts";
 config.dirServerPagesViews = config.dirServerViews+"/pages";
 config.viewFileExtension = ".njk";

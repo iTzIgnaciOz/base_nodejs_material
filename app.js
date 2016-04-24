@@ -6,6 +6,7 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const path = require('path');
+const consolidate = require('consolidate');
 
 
 // Dependencias Locales
@@ -21,14 +22,13 @@ global.helper = helper;
 global.__basedir = path.resolve(__dirname, '.');
 
 var app = express();
-
-nunjucks.configure([config.dirServerLayoutViews,config.dirServerPagesViews], {
-    autoescape: true,
-    express: app
-});
-
 /* static files */
 app.use('/public', express.static(__dirname + '/public'));
+app.locals = global.config;
+app.set('view engine', 'nunjucks');
+app.set('views', config.dirServerViews);
+app.engine('.njk', consolidate.nunjucks);
+app.set('view cache', false);
 app.use('/', router_app);
 
 /// catch 404 and forwarding to error handler
