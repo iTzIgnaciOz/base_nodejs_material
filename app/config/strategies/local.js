@@ -16,13 +16,11 @@ module.exports = function() {
             // Si ocurre un error continuar al siguiente middleware
 
             if (err) {
-                console.log('entro if err');
                 return done(err);
             }
 
             // Si no se ha encontrado un usuario, continuar al siguiente middleware con un mensaje de error
             if (!user) {
-                console.log('entro if !user');
                 return done(null, false, {
                     message: 'Usuario desconocido'
                 });
@@ -30,12 +28,10 @@ module.exports = function() {
 
             // Si la contraseña es incorrecta, continuar al siguiente middleware con un mensaje de error
             if (!user.authenticate(password)) {
-                console.log('entro if !user.authenticate');
                 return done(null, false, {
                     message: 'Contraseña incorrecta'
                 });
             }
-
             // En otro caso, continuar al siguiente middleware con el objeto user
             return done(null, user);
         });
