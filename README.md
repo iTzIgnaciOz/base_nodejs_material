@@ -1,4 +1,4 @@
-# base_nodejs_material TEST
+# base_nodejs_material TEST2
 Plantilla base (bootstrap-material) para futuros desarrollos con nodejs
 
 **Comandos a ejecutar:**
